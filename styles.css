@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto,sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template : 100vh / 14vw 86vw ;
+}
+
+/* img{
+    width: 50px;
+} */
+/* Sidebar */
+
+aside{
+    background-color: rgba(24,146,211,255);
+    display: grid;
+    grid-template: 10vh 40vh 50vh / 100%;
+    color: rgba(254,254,254,255);
+}
+
+.title{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 3%;
+    padding-left: 6%;
+}
+
+.title-logo{
+    width: 17%;
+}
+
+.title-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.sidebar-items{
+    /* background-color: green; */
+    padding-top: 12%;
+}
+
+.sidebar-items-2{
+    /* background-color: red; */
+    padding-top: 0;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    column-gap: 7%;
+    padding-left: 10%;
+    padding-bottom: 8%;
+}
+.item-text{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.item-logo{
+    width: 10%;
+}
+
+/* Main content */
+
+.main-content{
+    display: grid;
+    grid-template: 18vh 1fr / 100%;
+}
+
+header{
+    display: grid;
+    grid-template: 40% 1fr / 1fr;
+    z-index: 2;
+}
+
+.header-1{
+    display: grid;
+    grid-template: 1fr / 80% 20%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-logo{
+    width: 2%;
+    margin-left: 4%;
+}
+
+.search-box{
+    padding: 10px 500px 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 1%;
+    background-color: rgba(225,232,240,255);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.account{
+    display: flex;
+    align-items: center;
+}
+
+.notification-logo{
+    width: 8%;
+    margin-right: 9%;
+}
+
+.account-logo{
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: 9%;
+}
+
+.account-name{
+    font-weight: 600;
+}
+
+
+
+.header-2{
+    display: grid;
+    grid-template: 1fr / 70% 30%;
+}
+
+
+.user{
+    display: flex;
+    align-items: center
+}
+
+.user-logo{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    object-fit: cover;
+    margin-left: 4%;
+}
+
+.user-text{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1.5%;
+}
+
+.user-hi-text{
+    font-size: 0.9rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.buttons button{
+    padding: 2% 7%;
+    border-radius: 20px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgba(24,146,211,255);
+    color: rgba(254,254,254,255);
+    margin-left: 3%;
+    margin-right: 4%;
+}
+
+main{
+    background-color: rgba(225,232,240,255);
+    display: grid;
+    grid-template: 51% 47% / 37% 37% 19%;
+    gap: 2%;
+    z-index: 1;
+}
+
+.project-section{
+    grid-area: 1/1/3/3;
+    padding-left: 2%;
+}
+
+.announcement-section{
+    grid-area: 1/3/2/4;
+}
+
+.trending-section{
+    grid-area: 2/3/3/4;
+}
+
+.projects-title, .announcements-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 30px 10px 10px 0;
+}
+
+.trending-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 10px 10px 0;
+}
+
+
+.projects{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.project{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border-left: 7px solid rgba(249,203,21,255);
+
+}
+
+.project-text{
+    padding: 30px 30px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.projects-share{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.projects-share img{
+    width: 5%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+.announcements{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 20px 20px;
+}
+
+.announce{
+    padding: 20px 10px;
+}
+.announce-border{
+    border-bottom: 1px solid rgb(148, 140, 140);
+}
+
+.announce-text{
+    font-size: 0.8rem;
+    color: rgb(66, 66, 66);
+}
+
+
+.trending{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 7px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
+
+.trend{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.trend-user-logo{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 10%;
+}
+
+.trend-logo{
+    width: 7%;
+}
+
+.trend p{
+    padding-left: 3%;
+}
+
+
+.trending, .announcements, .project {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+header{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+}
